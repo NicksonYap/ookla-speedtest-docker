@@ -8,4 +8,5 @@ RUN curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/scr
 RUN apt-get install -y speedtest
 
 COPY ./speedtest.sh .
+RUN chmod +x ./speedtest.sh
 CMD ["./speedtest.sh"]
